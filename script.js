@@ -74,8 +74,9 @@ function renderSearch(e) {
   loadingMessage.style.display = "block";
   setTimeout(() => {
     loadingMessage.style.display = "none";
-  }, 2000);
+  }, 1000);
 
+  //replace with async function later
   setTimeout(() => {
     let retrievedWeatherData = JSON.parse(localStorage.getItem(userEntered));
 
@@ -142,12 +143,14 @@ function renderSearch(e) {
         ) {
           arr[j].textContent =
             "Humidity: " + retrievedWeatherData[objectNum] + " %";
+        } else {
+          arr[j].textContent = retrievedWeatherData[objectNum];
         }
 
         objectNum++;
       }
     }
-  }, 2000);
+  }, 1000);
 
   document.addEventListener("click", function (e) {
     for (let i = 0; i < localStorage.length; i++) {
@@ -218,6 +221,8 @@ function renderSearch(e) {
               ) {
                 arr[j].textContent =
                   "Humidity: " + retrievedWeatherData[objectNum] + " %";
+              } else {
+                arr[j].textContent = retrievedWeatherData[objectNum];
               }
 
               objectNum++;
@@ -232,5 +237,3 @@ function renderSearch(e) {
 
 //all event listeners
 SearchButton.addEventListener("click", renderSearch);
-
-setTimeout(() => {}, 1000);
