@@ -1,0 +1,93 @@
+html body {
+  /* background-color: Black; */
+  margin: 0 auto;
+}
+nav {
+  background-image: linear-gradient(to right, #465ab8, #261360);
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  margin-top: -21px;
+}
+h1 {
+  padding-left: 220px;
+  padding-top: 15px;
+}
+.container {
+  display: flex;
+}
+.l-col {
+  width: 20%;
+  margin-left: 10px;
+}
+
+.r-col {
+  width: 80%;
+  display: none;
+}
+
+form {
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+}
+form input {
+  width: 96.7%;
+  margin-top: 15px;
+}
+form button {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #6991e3;
+  border-radius: 5px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+.loading {
+  display: none;
+}
+
+.searchbox {
+  border-top: 1px solid gray;
+}
+.searchbox button {
+  width: 100%;
+  margin-top: 15px;
+  display: none;
+}
+
+.today {
+  border: 1px solid black;
+  margin: 15px;
+}
+.today > * {
+  margin: 15px;
+}
+.week {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+h4 {
+  margin-left: 15px;
+}
+
+.box {
+  background-color: #323d4f;
+  margin: 7px;
+  width: 18%;
+  color: white;
+}
+
+.box > * {
+  margin-left: 15px;
+}
+
+.today img {
+  position: absolute;
+  left: 34%;
+  top: 10.5%;
+}
