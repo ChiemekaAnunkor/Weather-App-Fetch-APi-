@@ -9,8 +9,8 @@ The purpose of this project was to create a coding assessment to test the user's
 This application runs in the browser via JavaScript code and features dynamically updated HTML and CSS. Some interesting features included in this application are: a timer function that penalizes the user for incorrect answers by deducting time from the clock, automatically presenting the user the next question when an answer is submitted, and the ability for the user to save their highscores in local storage and view them on a leaderboard page that shows historical results.
 
 ## Application Demo
+<img width="925" alt="image" src="https://user-images.githubusercontent.com/63639477/194747128-3aa74ff3-a63d-4f50-a41c-142560a675ae.png">
 
-![Demo of code quiz application](./assets/demo.gif)
 
 ## Code Examples
 
